@@ -245,22 +245,34 @@
     </div>
 </section>
 
-    <section id="agendamento" class="py-24 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-sky-50 rounded-[4rem] p-12 md:p-20 border border-sky-100">
-                <div class="text-center mb-12">
-                    <h3 class="text-3xl font-semibold text-slate-900">Escolha seu Momento</h3>
-                    <p class="text-slate-400 font-light">Agendamento rápido e seguro.</p>
-                </div>
-                <form class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <input type="text" placeholder="Nome Completo" class="p-5 rounded-3xl border-0 bg-white shadow-sm focus:ring-2 focus:ring-sky-400 outline-none">
-                    <input type="date" class="p-5 rounded-3xl border-0 bg-white shadow-sm focus:ring-2 focus:ring-sky-400 outline-none text-slate-400">
-                    <input type="time" class="p-5 rounded-3xl border-0 bg-white shadow-sm focus:ring-2 focus:ring-sky-400 outline-none text-slate-400">
-                    <button type="submit" class="bg-sky-500 text-white font-semibold py-5 rounded-3xl hover:bg-sky-600 transition shadow-lg shadow-sky-100 uppercase tracking-widest text-sm">Verificar Horário</button>
-                </form>
+   <section id="agendamento" class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="bg-sky-50 rounded-[4rem] p-12 md:p-20 border border-sky-100">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-semibold text-slate-900">Escolha seu Momento</h3>
+                <p class="text-slate-400 font-light">Agendamento rápido e seguro.</p>
             </div>
+
+            <form action="https://formsubmit.co/saudefrequenciaevida@gmail.com" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <input type="text" name="nome" placeholder="Nome Completo" required class="p-5 rounded-3xl border-0 bg-white shadow-sm focus:ring-2 focus:ring-sky-400 outline-none">
+                
+                <input type="tel" name="celular" placeholder="Celular (WhatsApp)" required class="p-5 rounded-3xl border-0 bg-white shadow-sm focus:ring-2 focus:ring-sky-400 outline-none">
+
+                <input type="date" name="data" required class="p-5 rounded-3xl border-0 bg-white shadow-sm focus:ring-2 focus:ring-sky-400 outline-none text-slate-400">
+                
+                <input type="time" name="horario" required class="p-5 rounded-3xl border-0 bg-white shadow-sm focus:ring-2 focus:ring-sky-400 outline-none text-slate-400">
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+                <button type="submit" class="bg-sky-500 text-white font-semibold py-5 rounded-3xl hover:bg-sky-600 transition shadow-lg shadow-sky-100 uppercase tracking-widest text-sm md:col-span-2">
+                    Verificar Horário
+                </button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
 
         <!-- FOTOS -->
